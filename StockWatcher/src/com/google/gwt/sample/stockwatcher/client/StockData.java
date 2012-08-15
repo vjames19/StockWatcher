@@ -14,6 +14,7 @@ public class StockData extends JavaScriptObject {
 
 	  // Non-JSNI method to return change percentage.                       // (4)
 	  public final double getChangePercent() {
-	    return 100.0 * getChange() / getPrice();
+	    final double PERCENT = 100.0;
+		  return PERCENT * getChange() / getPrice();
 	  }
 }
